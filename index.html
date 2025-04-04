@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Gallery</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family:serif;
+      margin:  0;
+      padding: 8px 0 0;
+      background-color:#D76C82;
+      background-image: url('https://i.pinimg.com/736x/53/88/d8/5388d8a83b91781e0b4b04910eb5758c.jpg');
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+    background-size: cover;  
+    background-position: center;  
+    color: #B03052;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;  
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Navigation Buttons */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #D76C82;
+      color: #EBE8DB;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #B03052;
+      transform: translateY(-3px);
+    }
+
+    /* Section Tiles */
+    .tile {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #ddd;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color:  #D76C82;
+      color: #fff;
+      width: 100%;
+      margin-top: 20px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Gallery Styles */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color:  #D76C82;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Hidden Sections */
+    .hidden {
+      display: none;
+    }
+
+    /* About Me Section */
+    #about p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    #contact ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #contact ul li {
+      margin: 10px 0;
+    }
+
+    #contact ul li a {
+      color: #B03052;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    #contact ul li a:hover {
+      color: #B03052;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SAMANTHA AZHIYA T. IBAY</h1>
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+        <li><a href="#contact" onclick="showSection('contact')">Contact & Social Media</a></li>
+        <li><a href="#gallery" onclick="showSection('gallery')">Photo Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="tile">
+    <h2>About Me</h2>
+  
+     <p>Hi, I’m Samantha Azhiya T. Ibay, and I’m from Bagong Sikat, Talavera, Nueva Ecija. Growing up here has taught me a lot about the importance of community and family. As the first child, I feel a strong sense of responsibility to set a good example for my younger sisters. I want to be someone they can look up to, and I’m determined to help them achieve their dreams, especially when it comes to finishing college.
+ 
+    <p>I’m passionate about reading, writing, and watching movies. Reading lets me explore new ideas and perspectives, while writing is my way of expressing myself and reflecting on my thoughts. Whether it’s journaling or creating stories, writing helps me make sense of the world around me. Watching movies is another favorite pastime of mine. I love how films can transport me to different places and emotions, and I often find myself inspired by the stories they tell.
+    
+    <p>Becoming a nurse is something I’ve always dreamed of, but for me, it’s not just about helping others—it’s about helping my family too. As the firstborn, I feel a strong responsibility to support my sisters and make sure they have every opportunity to graduate college and build their own futures. Nursing isn’t just a career for me, it’s a way to provide for my family and give them the stability they deserve. I want to make a difference in people’s lives through healthcare, but I also want to make sure my family’s future is secure, so they can have the same opportunities I’ve worked so hard for.
+    <p>At the end of the day, it's all about balancing my dreams and the people I love. I’m excited for what the future holds—helping my family and seeing more of the world. It won’t always be easy, but I’m ready to take on whatever comes my way. I believe that with a little bit of determination and a lot of heart, I can make my dreams a reality, and I can’t wait to see where life takes me.
+        
+  </section>
+
+  <!-- Contact & Social Media Section -->
+  <section id="contact" class="tile hidden">
+    <h2>Contact & Social Media</h2>
+    <p>Hey there! 😊 Let’s stay in touch! Feel free to shoot me an email or follow me on social media—I’d love to connect and chat anytime! 💬✨:</p>
+    <ul>
+      <li>Email: <a href="mailto:your.email@example.com">samanthaibay4@gmail.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/smnthavs_">smnthavs_</a></li>
+      <li>Facebook: <a href="https://facebook.com/samantha.azhiya.ibay">Samantha Azhiya Ibay</a></li>
+      <li>TikTok: <a href="https://tiktok.com/@iyannha.sm">@iyannha.sm</a></li>
+
+    </ul>
+
+  </section>
+
+  <!-- Photo Gallery Section -->\
+  <section id="gallery" class="tile hidden">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="sam.jpg" alt="Photo 1"></div>
+      <div class="gallery-item"><img src="falls.jpg" alt="Photo 2"></div>
+      <div class="gallery-item"><img src="samnapink.jpg" alt="Photo 3"></div>
+      <div class="gallery-item"><img src="samsagw.jpg" alt="Photo 4"></div>
+      <div class="gallery-item"><img src="pagkain.jpg" alt="Photo 5"></div>
+      <div class="gallery-item"><img src="ropapips.jpg" alt="Photo 6"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samantha Azhiya T. Ibay. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to toggle sections
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.add('hidden');
+      });
+
+      // Show the selected section
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    // Show the "About Me" section by default
+    showSection('about');
+  </script>
+</body>
+</html>
